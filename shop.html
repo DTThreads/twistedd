@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/webp85/736x/3a/7b/39/3a7b3993432eba949cfeecac481e850d.webp');
+        }
+        .button{
+        border-color: #8a4a71;
+        background-color: #ffcccc;
+        padding: 10px 30px;
+        border-width: 10px;
+        color: black;
+        transition: transform 0.3s ease; /* Makes the zoom smooth */
+        }
+        .button:hover{
+        border-color: #8a4a71;
+        background-color: #ffcccc;
+        transform: scale(1.2);
+        }
+        /* The grid container */
+        .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+        gap: 64px;
+        padding: 64px;
+        }
+
+        /* Individual photo wrappers */
+        .photo-item {
+        aspect-ratio: 1 / 1; /* Forces square images; change to 4/3 or 16/9 if preferred */ 
+        }
+
+        /* Make sure images fill the space perfectly without distorting */
+        .photo-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+        border: 10px;
+        border-color: #8a4a71;
+        }
+
+        /* Optional hover effect */
+        .photo-item img:hover {
+        transform: scale(1.05);
+        }
+        .caption {
+        margin: 0;
+        padding: 12px; /* Adds space around the text inside the card */
+        font-family: Mali;
+        font-size: 25px;
+        color: #8a4a71;
+        text-align: center; /* Centers the text under the photo */
+        font-weight: 700;
+        }
+        .cart {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        position: fixed;   /* Lock to viewport */
+        top: 20px;      /* Distance from bottom */
+        right: 20px;       /* Distance from right */
+        transition: transform 0.3s ease; /* Makes the zoom smooth */
+        }
+    
+        .cart:hover {
+        transform: scale(1.2); /* Enlarges the image to 120% of its size */
+        }
+        .buy{
+            background: none;
+            border: none;
+            aspect-ratio: 1 / 1;
+        }
+    </style>
+    <br>
+    <a href="cart.html"><button type="button" class="cart"><img src="imgs/s_cart.png" alt="shopping cart" width="100" height="100"></button></a>
+    <center><h1 style="font-family: Mali; font-size: xxx-large; font-weight: 1000; color: #8a4a71;text-decoration: underline;-webkit-text-stroke: 2px black;">⋆·˚ ༘ *SHOP⋆·˚ ༘ *</h1>
+    <h1 style="font-family: Mali; font-size: xxx-large; font-weight: 1000; color: #8a4a71;text-decoration: underline;-webkit-text-stroke: 2px black;">MORE COMING SOON!</h1>
+    <p style="font-family: Mali;font-weight: 600; font-size: small;">*only made with acrylic yarn, plus $5 for chenille yarn</p></center>
+    <div class="photo-grid">
+    <div class="photo-item">
+        <a href="duck.html"><button type="button" class="buy"><img src="images/duck.jpg" alt="cute duck"></button></a>
+        <p class="caption">Crochet Duck</p>
+    </div>
+    <div class="photo-item">
+        <a href="monkey.html"><button type="button" class="buy"><img src="images/monke2.png" alt="cute sitting monkey"></button></a>
+        <p class="caption">Crochet Monkey</p>
+    </div>
+    <div class="photo-item">
+        <a href="octopus.html"><button type="button" class="buy"><img src="images/octopi.png" alt="cute octopi"></button></a>
+        <p class="caption">Crochet Octopus (1)</p>
+    </div>
+    <div class="photo-item">
+        <a href="penguin.html"><button type="button" class="buy"><img src="images/penguin.png" alt="cute penguins"></button></a>
+        <p class="caption">Crochet Penguin (1)</p>
+    </div>
+    <div class="photo-item">
+        <a href="bee.html"><button type="button" class="buy"><img src="images/bb.png" alt="cute crochet bee"></button></a>
+        <p class="caption">Crochet Bee</p>
+    </div>
+    <div class="photo-item">
+        <a href="flower.html"><button type="button" class="buy"><img src="images/pillow.png" alt="crochet flower pillow"></button></a>
+        <p class="caption">Crochet Flower Pillow</p>
+    </div>
+    <div class="photo-item">
+        <a href="scrunchie.html"><button type="button" class="buy"><img src="images/scrunshies.png" alt="crochet scrunchies"></button></a>
+        <p class="caption">Crochet Scrunchie (1)</p>
+    </div>
+    <div class="photo-item">
+        <a href="turtle.html"><button type="button" class="buy"><img src="images/turtle.png" alt="cute crochet turtle"></button></a>
+        <p class="caption">Crochet Turtle (1)</p>
+    </div>
+    <div class="photo-item">
+        <a href="crab.html"><button type="button" class="buy"><img src="images/crabs.jpeg" alt="cute crochet crab"></button></a>
+        <p class="caption">Crochet Crab (1)</p>
+    </div>
+    <div class="photo-item">
+        <a href="eleP.html"><button type="button" class="buy"><img src="images/elephant2.jpeg" alt="cute crochet elephant"></button></a>
+        <p class="caption">Crochet Elephant (1)</p>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><a href="index.html"><button type="button" class="button" style="font-family: Mali;font-size: 20px;font-weight: 800;text-decoration: underline;">Homepage</button></a></center>
+</body>
+</html>
